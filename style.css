@@ -1,0 +1,164 @@
+body {
+  margin: 0 auto;
+  font-family: IBM Plex Mono;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+main {
+  margin: 40px;
+  margin-top: 32px;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+  background-color: #F2F3F4;
+}
+
+.search, 
+.submit {
+  height: 42px;
+}
+
+.search {
+  width: 957px;
+  background-color: #F0F2F480;
+  opacity: 50%;
+  border: 1px solid #DEE5EB;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.submit {
+  width: 171px;
+  margin-left: 8px;
+  border: none;
+  background: #7B8395;
+}
+
+.searchBtnName {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.sidebar {
+  width: 124px;
+  background-color: #E4E5E6;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  background-color: #D4D5D6;
+}
+
+table {
+  background: white; /* Цвет фона таблицы */
+  border: 1px solid #F2F3F4;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+}
+
+td, th {
+  height: 40px;
+  width: 193px;
+  border: 1px solid #F2F3F4;
+  text-align: center;
+}
+
+th {
+  font-family: IBM Plex Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #7B8395;
+  opacity: 50%;
+  background: #F0F2F480;
+
+}
+
+td {
+  font-family: IBM Plex Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #1F232E;
+}
+
+.brandModel {
+  text-align: left;
+  padding-left: 15px;
+}
+
+#selectedCar {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 75px;
+  width: 100vw;
+  background: #F0F2F4;
+  font-family: IBM Plex Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7B8395;
+  border: 1px solid #DEE5EB;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+  position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+  right: 8px;
+  position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+content: "▲"
+}
+
+#loadingIndicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 99;
+}

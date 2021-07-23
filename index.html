@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header></header>
+  <div class="container">
+    <div class="sidebar"></div>
+    <main>
+      <div class="searchBox">
+        <input type="search" name="" id="searchInput" class="search" placeholder="	
+        &#128269; Поиск" onkeyup="search()">
+        <button type="submit" class="submit"><span class="searchBtnName">Найти</span></button>
+      </div>
+      <table class="table_sort" id="searchTable">
+        <thead>
+          <tr></tr>
+        </thead>
+        <tbody id="carsList"></tbody>
+      </table>
+      <div id="selectedCar">
+        <div></div>
+        <button onclick="deselectCar()">X</button>
+      </div>
+    </main>
+  </div>
+  <footer></footer>
+</body>
+<script src="index.js"></script>
+</html>
